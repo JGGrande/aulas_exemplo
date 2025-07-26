@@ -1,0 +1,21 @@
+{
+  "name": "servidor_lento_exemplo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "stress": "autocannon -c 40 -d 10 http://localhost:3000"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "João Gabriel Grande",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "autocannon": "^8.0.0"
+  }
+}
