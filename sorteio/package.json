@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "stress": "autocannon -c 40 -d 10 http://localhost:3000"
+    "stress": "autocannon -c 100 -d 30 https://aulas-exemplo.infra.bytework.app.br/"
   },
   "type": "module",
   "keywords": [],
