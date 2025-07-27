@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  DemoFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handler.handler
+      Runtime: nodejs18.x
+      Timeout: 10
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+      CodeUri: DemoFunction
+    Metadata:
+      SamResourceId: DemoFunction
